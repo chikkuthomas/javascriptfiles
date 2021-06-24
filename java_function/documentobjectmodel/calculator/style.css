@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+.inpt{
+    width: 220px;
+    height: 45px;
+    border-radius: 3%;
+    border: none;
+}
+button{
+    color: white;
+    width:53px;
+    height: 30px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5%;
+    background-color: rgb(26, 24, 24);
+}
+
+.layer{
+    margin-right: 5px;
+    
+}
+.equal{
+    display: flex;
+    justify-content: center;
+}

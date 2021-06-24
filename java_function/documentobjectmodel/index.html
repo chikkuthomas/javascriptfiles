@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+
+</head>
+
+<body>
+    <div class="row" style="text-align: center;">
+<!-- -------- ----calculator---- -->
+    <div class="class">
+        <h1>Calculator</h1>
+    </div>
+    <!-- -----calculator ends here -->
+<!-- text and calear button -->
+    <div>
+        <input type="text" class="result"  id="inpt">
+        <button class="clear" onclick="clearbox()">c</button>
+    </div>
+    <!-- text and clear end here -->
+    <div class="second">
+        <button class="line" onclick="displayvalue('1')">1</button>
+        <button class="line"onclick="displayvalue('2')">2</button>
+        <button class="line"onclick="displayvalue('3')">3</button>
+        <button class="line"onclick="displayvalue('+')">+</button>
+    </div>
+<!--  second line -->
+<div class="second">
+    <button class="line"onclick="displayvalue('4')">4</button>
+    <button class="line"onclick="displayvalue('5')">5</button>
+    <button class="line"onclick="displayvalue('6')">6</button>
+    <button class="line"onclick="displayvalue('-')">-</button>
+</div>
+<!-- -----second line ends here -->
+<div class="second">
+    <button class="line"onclick="displayvalue('7')">7</button>
+    <button class="line"onclick="displayvalue('8')">8</button>
+    <button class="line"onclick="displayvalue('9')">9</button>
+    <button class="line"onclick="displayvalue('*')">*</button>
+</div>
+<!-- ----third line ends here -->
+<div class="second">
+    <button class="line"onclick="displayvalue('/')">/</button>
+    <button class="line"onclick="displayvalue('0')">0</button>
+    <button class="line"onclick="displayvalue('.')">.</button>
+    <button class="line" onclick="evaluateExpression()">=</button>
+</div>
+</div>
+
+
+
+</body>
+
+</html>

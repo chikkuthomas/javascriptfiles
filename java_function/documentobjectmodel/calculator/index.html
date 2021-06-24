@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="row" style="text-align: center;">
+        <div class="title">
+            <h1 style="color: wheat;">Calculator</h1>
+        </div>
+
+        <div class="result">
+            <input type="text" class="inpt" id="int">
+        </div>
+        <div class="first">
+            <!-- onclick set the number/operator button as value to text box -->
+            <button style="background-color: red;color: rgb(245, 243, 243);" onclick="clearBox()"><b>AC</b></button>
+            <button style="background-color: rgb(16, 209, 16);color:white;"onclick="deleteElement()"><b>C</b></button>
+            <button onclick="displayValue('/')">/</button>
+            <button onclick="displayValue('*')">X</button>
+        </div>
+
+        <div class="second">
+            <button onclick="displayValue('1')">1</button>
+            <button onclick="displayValue('2')">2</button>
+            <button onclick="displayValue('3')">3</button>
+            <button onclick="displayValue('+')">+</button>
+        </div>
+
+        <div class="third">
+            <button onclick="displayValue('4')">4</button>
+            <button onclick="displayValue('5')">5</button>
+            <button onclick="displayValue('6')">6</button>
+            <button onclick="displayValue('-')">-</button>
+        </div>
+        <div class="equal">
+            <div class="layer">
+                <div class="fourth">
+                    <button onclick="displayValue('7')">7</button>
+                    <button onclick="displayValue('8')">8</button>
+                    <button onclick="displayValue('9')">9</button>
+
+                </div>
+
+                <div class="last">
+                    <button style="width: 109px;" onclick="displayValue('0')">0</button>
+                    <button onclick="displayValue('.')">.</button>
+                </div>
+            </div>
+            <div>
+                <button style="height: 65px;" onclick="evaluateExpression()">=</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
